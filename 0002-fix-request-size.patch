@@ -1,0 +1,11 @@
+--- a/dsdt.dsl	2024-09-22 13:53:30.000000000 +0800
++++ b/dsdt.dsl	2024-09-22 16:24:23.827109232 +0800
+@@ -25768,7 +25768,7 @@
+             {
+                 Memory32Fixed (ReadWrite,
+                     0x00000000,         // Address Base
+-                    0x00008000,         // Address Length
++                    0x0000E000,         // Address Length
+                     _Y3D)
+                 Memory32Fixed (ReadWrite,
+                     0x00000000,         // Address Base

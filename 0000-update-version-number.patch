@@ -1,0 +1,11 @@
+--- a/dsdt.dsl	2024-09-22 13:53:30.000000000 +0800
++++ b/dsdt.dsl	2024-09-22 16:29:36.679118779 +0800
+@@ -18,7 +18,7 @@
+  *     Compiler ID      "INTL"
+  *     Compiler Version 0x20191018 (538513432)
+  */
+-DefinitionBlock ("", "DSDT", 2, "INTEL", "NUCxi7A5", 0x00000028)
++DefinitionBlock ("", "DSDT", 2, "INTEL", "NUCxi7A5", 0x00000029)
+ {
+     External (_GPE.AL6F, MethodObj)    // 0 Arguments
+     External (_GPE.ITBT, MethodObj)    // 1 Arguments

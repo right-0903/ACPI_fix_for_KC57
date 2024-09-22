@@ -1,0 +1,35 @@
+--- a/dsdt.dsl	2024-09-22 13:53:30.000000000 +0800
++++ b/dsdt.dsl	2024-09-22 16:29:36.679118779 +0800
+@@ -448,7 +448,7 @@
+     Name (PECS, One)
+     Name (ITKE, Zero)
+     Name (MBEC, 0xFFFF)
+-    Name (PEBS, 0xC0000000)
++    Name (PEBS, 0xE0000000)
+     Name (PELN, 0x10000000)
+     Name (CSMI, 0x61)
+     Name (FHPP, One)
+@@ -25779,9 +25779,9 @@
+                     0x00001000,         // Address Length
+                     _Y3F)
+                 Memory32Fixed (ReadWrite,
+-                    0x00000000,         // Address Base
+-                    0x00000000,         // Address Length
+-                    _Y40)
++                    0xE0000000,         // Address Base
++                    0x10000000,         // Address Length
++                    )
+                 Memory32Fixed (ReadWrite,
+                     0xFED20000,         // Address Base
+                     0x00060000,         // Address Length
+@@ -25815,10 +25815,6 @@
+                 DBR0 = GDMB ()
+                 CreateDWordField (BUF0, \_SB.PC00.PDRC._Y3F._BAS, EBR0)  // _BAS: Base Address
+                 EBR0 = GEPB ()
+-                CreateDWordField (BUF0, \_SB.PC00.PDRC._Y40._BAS, XBR0)  // _BAS: Base Address
+-                XBR0 = GPCB ()
+-                CreateDWordField (BUF0, \_SB.PC00.PDRC._Y40._LEN, XSZ0)  // _LEN: Length
+-                XSZ0 = GPCL ()
+                 If (!HPTE)
+                 {
+                     CreateDWordField (BUF0, \_SB.PC00.PDRC._Y41._BAS, HBAS)  // _BAS: Base Address

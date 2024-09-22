@@ -1,0 +1,23 @@
+--- a/dsdt.dsl	2024-09-22 13:53:30.000000000 +0800
++++ b/dsdt.dsl	2024-09-22 16:29:36.679118779 +0800
+@@ -448,7 +448,7 @@
+     Name (PECS, One)
+     Name (ITKE, Zero)
+     Name (MBEC, 0xFFFF)
+-    Name (PEBS, 0xC0000000)
++    Name (PEBS, 0xE0000000)
+     Name (PELN, 0x10000000)
+     Name (CSMI, 0x61)
+     Name (FHPP, One)
+@@ -6193,7 +6193,8 @@
+         {
+             If ((PC_B == Zero))
+             {
+-                PC_B = (PXBR << 0x1A)
++                /* PC_B = (PXBR << 0x1A) */
++                PC_B = 0xE0000000
+             }
+ 
+             Return (PC_B) /* \_SB_.PC00.PC_B */
+
+ 

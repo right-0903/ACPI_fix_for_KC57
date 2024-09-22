@@ -1,0 +1,13 @@
+--- a/dsdt.dsl	2024-09-22 13:53:30.000000000 +0800
++++ b/dsdt.dsl	2024-09-22 16:29:36.679118779 +0800
+@@ -79646,8 +79646,8 @@
+             Name (BUF0, ResourceTemplate ()
+             {
+                 Memory32Fixed (ReadWrite,
+-                    0xFE410000,         // Address Base
+-                    0x000000FF,         // Address Length
++                    0xFE410400,         // Address Base
++                    0x00000100,         // Address Length
+                     )
+             })
+             Method (_STA, 0, Serialized)  // _STA: Status

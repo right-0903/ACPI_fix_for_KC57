@@ -1,0 +1,65 @@
+--- a/dsdt.dsl	2024-09-22 13:53:30.000000000 +0800
++++ b/dsdt.dsl	2024-09-22 16:29:36.679118779 +0800
+@@ -71301,18 +71302,6 @@
+                     {
+                         Return (Zero)
+                     }
+-                    Case (0x03)
+-                    {
+-                        Return (Zero)
+-                    }
+-                    Case (0x03)
+-                    {
+-                        Return (Zero)
+-                    }
+-                    Case (0x30)
+-                    {
+-                        Return (Zero)
+-                    }
+                     Case (0xC4)
+                     {
+                         Return (Zero)
+@@ -71337,14 +71326,6 @@
+                     {
+                         Return (Zero)
+                     }
+-                    Case (0x78)
+-                    {
+-                        Return (Zero)
+-                    }
+-                    Case (0xA0)
+-                    {
+-                        Return (Zero)
+-                    }
+                     Case (0xA0)
+                     {
+                         Return (Zero)
+@@ -71407,15 +71388,6 @@
+                     Case (0x45)
+                     {
+                     }
+-                    Case (0x03)
+-                    {
+-                    }
+-                    Case (0x03)
+-                    {
+-                    }
+-                    Case (0x30)
+-                    {
+-                    }
+                     Case (0xC4)
+                     {
+                     }
+@@ -71434,12 +71406,6 @@
+                     Case (0xC8)
+                     {
+                     }
+-                    Case (0x78)
+-                    {
+-                    }
+-                    Case (0xA0)
+-                    {
+-                    }
+                     Case (0xA0)
+                     {
+                     }
